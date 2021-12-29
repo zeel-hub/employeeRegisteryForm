@@ -1,0 +1,69 @@
+<!--
+    Assignment by: Zeel K Patel, 000824838
+    I, Zeel Patel, student number 000824838, certify that this material is my original work. No other person's work has been used without due acknowledgment and I have not made my work available to anyone else.
+-->
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lab2.css">
+        <script src="lab2.js"></script>
+
+    </head>
+
+    <body>
+    <div class="container">
+        <h1>Employee Registry</h1>
+        <form onsubmit="event.preventDefault();">
+            <div class="form-group row">
+                <label for="name" class="col-sm-2 col-form-label">Name: </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" placeholder="Jane Doe" required>
+                    <div id="name-feedback"></div>
+                </div>     
+            </div>
+
+            <div class="form-group row">
+                <label for="employeeId" class="col-sm-2 col-form-label">Employee ID: </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="employeeId" placeholder="429126346" required>
+                    <div id="employeeId-feedback"></div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="department" class="col-sm-2 col-form-label">Department: </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="department" placeholder="Sales" required>
+                    <div id="department-feedback"></div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="bonus" class="col-sm-2 col-form-label">Bonus: </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="bonus" placeholder="250000" readonly required>
+                    <div id="bonus-feedback"></div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary mb-2" id="button" disabled>Submit form</button>
+        </form>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Employee Name</th>
+                    <th scope="col">Employee Id</th>
+                    <th scope="col">Department</th>
+                    <th scope="col">Bonus</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+    </div>
+    </body>
+</html>
